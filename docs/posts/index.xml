@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Milton Jacomini</title>
+		<link>http://miltonjneto.com.br/posts/</link>
+		<description>Recent content in Posts on Milton Jacomini</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<lastBuildDate>Sun, 17 Feb 2019 17:14:00 -0300</lastBuildDate>
+		<atom:link href="http://miltonjneto.com.br/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Criando site com hugo (GoLang)</title>
+			<link>http://miltonjneto.com.br/posts/criando-site-com-hugo/</link>
+			<pubDate>Sun, 17 Feb 2019 17:14:00 -0300</pubDate>
+			
+			<guid>http://miltonjneto.com.br/posts/criando-site-com-hugo/</guid>
+			<description>Introdução Fala galera, suave!?
+Bom, to a um tempo para começar a escrever umas coisinhas que vou fazendo e aprendendo e agora resolvi iniciar essa parada de vez! =)
+O Hugo é um framework escrito em &amp;lsquo;Go&amp;rsquo; mais uma das linguagens do Pai Google! Eu to começando a brincar com Go e achei interessante montar o site com um framework da linguagem.
+Na página deles você acha as instruções para download e instalação.</description>
+			<content type="html"><![CDATA[
+
+<h2 id="introdução">Introdução</h2>
+
+<p>Fala galera, suave!?</p>
+
+<p>Bom, to a um tempo para começar a escrever umas coisinhas que vou fazendo e aprendendo
+e agora resolvi iniciar essa parada de vez! =)</p>
+
+<p>O <a href="https://gohugo.io/"><code>Hugo</code></a> é um framework escrito em &lsquo;Go&rsquo; mais uma das linguagens do Pai Google! Eu to começando
+a brincar com Go e achei interessante montar o site com um framework da linguagem.</p>
+
+<p>Na página deles você acha as instruções para <a href="https://golang.org/dl/">download</a> e <a href="https://golang.org/doc/install">instalação</a>.</p>
+
+<p>Feito isso, bora pro <code>Hugo</code></p>
+
+<h2 id="hugo">Hugo</h2>
+
+<h5 id="instalação"><em>Instalação</em></h5>
+
+<p>Muito simples, se você já for usuário dos shells da vida já vai matar rapidão.
+Senão for, basicamente existem gerenciadores de pacotes para instalação de softwares via <a href="https://swcarpentry.github.io/shell-novice/reference/">shell</a>.</p>
+
+<p>Se você for usuário de MacOS vai usar o <code>brew</code> se você for usuário de Windows
+vai usar o <code>choco</code> ou <code>scoop</code>. Mais sobre na <a href="https://gohugo.io/getting-started/installing">página</a> deles.</p>
+
+<h5 id="primeiros-passos"><em>Primeiros passos</em></h5>
+
+<p>Para se certificar que o <code>Hugo</code> está instalado digita ae:</p>
+
+<pre><code>hugo version
+</code></pre>
+
+<p>Depois disso acessa lá seu diretório que quer criar o site e manda:</p>
+
+<pre><code>hugo new site {nomedoseusite}
+</code></pre>
+
+<p>Se você digitar um <code>ls</code> vai ver que já existe a pasta que contém todo o conteúdo
+do seu site =), bora acessar ela <code>cd {nomedapasta}</code></p>
+
+<p>já vamos direto para o que interessa, que é o arquivo de <code>config</code>.</p>
+
+<p>Meu editor preferido hoje é o VSCode então usarei:</p>
+
+<pre><code>code config.toml
+</code></pre>
+
+<p>Mas você pode alterar code para seu editor de texto preferido trocando a primeira instrução do código acima ou simplesmente abrir o arquivo direto pelo seu editor.</p>
+
+<p>vamos por partes..rs</p>
+
+<p>Esse deve ser seu arquivo quando aberto:</p>
+
+<pre><code>baseURL = &quot;http://example.org/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;My New Hugo Site&quot;
+</code></pre>
+
+<p>Isso é o que deve ter aparecido pra você.</p>
+
+<p>Imagino que sem muito segredo, certo!? URL base da sua aplicação, a linguagem utilizada
+nos códigos e o título do seu site.</p>
+
+<p>O meu ficou assim:</p>
+
+<pre><code>baseURL = &quot;http://miltonjneto.com.br&quot; &lt;- Meu domínio
+languageCode = &quot;en-us&quot; &lt;- Não alterei a linguagem mantive o englishh
+title = &quot;Milton Jacomini&quot;
+</code></pre>
+
+<p>Por enquanto sem segredo né!? Bem easy, na real você vai ver que tudo é bem easy..rsrs</p>
+
+<p>Agora a parte mais divertida e demorada dependendo da pessoa, rsrsrsrs! Escolher o Tema,
+depois de escolhido vamos adiciona-lo ao site fazendo o seguinte.</p>
+
+<pre><code># Entra na pasta dele
+cd {seusite}
+
+# Para iniciar um repositório git na raiz do seu projeto
+git init
+git submodule add https://github.com/budparr/{pathdotema}.git {pathdotema}
+
+# ex: tema escolhido foi o themes/ananke
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+
+</code></pre>
+
+<p><figure class="right">
+    <img src="../images/download-zip-github.gif"
+         alt="Download tema github" width="250px"/> <figcaption>
+            <p>Download por zip</p>
+        </figcaption>
+</figure>
+
+Se você não é um usuário do Git ou não quer fazer isso agora, acessa o repositório do seu tema e faz o download da branch master.</p>
+
+<p>Feito isso faz a extração do arquivo zip e renomeia ele para o nome simples do tema,
+como por exemplo se era <code>gohugo-theme-ananke</code> renomeia só para <code>anake</code>.</p>
+
+<p>Copia esse arquivo para a pasta do seu site dentro de <code>themes</code>.</p>
+
+<p>E então voltamos ao arquivo de configuração que usamos lá no começo <code>config.toml</code>.</p>
+
+<pre><code>baseURL = &quot;http://miltonjneto.com.br&quot;
+languageCode = &quot;en-us&quot;
+theme = &quot;ananke&quot; #Adicione essa linha com o nome que da pasta que vc jogou na `themes`
+title = &quot;Milton Jacomini&quot;
+</code></pre>
+
+<p>Feito isso, cria um post novo só pra ver a magia da coisa.</p>
+
+<pre><code>hugo new posts/meu-primeiro-post.md 
+</code></pre>
+
+<p>E agora vamos iniciar o servidor do <code>Hugo</code> e ver o site online (Localmente, por enquanto..rs)</p>
+
+<p>Na raiz do projeto:</p>
+
+<pre><code>hugo server -D
+</code></pre>
+
+<figure>
+    <img src="../images/hugo-server-run.gif"
+         alt="Download tema github"/> <figcaption>
+            <p>hugo server -D</p>
+        </figcaption>
+</figure>
+
+
+<p>Já deve ter visto ele rodando né!? =)</p>
+
+<p>E ai curtiu?</p>
+
+<p>Estou aberto a feeback`s, abss.</p>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>
