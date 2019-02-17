@@ -1,7 +1,6 @@
 ---
 author: "Milton Jacomini"
 date: "2019-02-17T17:14:00-03:00"
-lastmod: "2019-02-17T17:14:00-03:00"
 title: Criando site com hugo (GoLang)
 tags: [
     "go",
@@ -99,15 +98,16 @@ git submodule add https://github.com/budparr/{pathdotema}.git {pathdotema}
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 
 ```
+
+{{< figure src="../images/download-zip-github.gif" alt="Download tema github" width="250px" caption="Download por zip" class="right" >}}
 Se você não é um usuário do Git ou não quer fazer isso agora, acessa o repositório do seu tema e faz o download da branch master.
 
-{{< figure src="images/download-zip-github.gif" title="Download tema github" >}}
-
 Feito isso faz a extração do arquivo zip e renomeia ele para o nome simples do tema,
-como por exemplo se era `gohugo-theme-ananke` renomeia só para `anake`. Copia esse arquivo para
-a pasta `{seusite}/themes/{suapastarenomeada}`.
+como por exemplo se era `gohugo-theme-ananke` renomeia só para `anake`. 
 
-voltamos ao arquivo de configuração que usamos lá no começo `config.toml`.
+Copia esse arquivo para a pasta do seu site dentro de `themes`.
+
+E então voltamos ao arquivo de configuração que usamos lá no começo `config.toml`.
 
 ```
 baseURL = "http://miltonjneto.com.br"
@@ -128,6 +128,8 @@ Na raiz do projeto:
 ```
 hugo server -D
 ```
+
+{{< figure src="../images/hugo-server-run.gif" alt="Download tema github" caption="hugo server -D" >}}
 
 Já deve ter visto ele rodando né!? =)
 

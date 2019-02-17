@@ -107,20 +107,21 @@ git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/anan
 
 </code></pre>
 
-<p>Se você não é um usuário do Git ou não quer fazer isso agora, acessa o repositório do seu tema e faz o download da branch master.</p>
-
-<figure>
-    <img src="images/download-zip-github.gif"/> <figcaption>
-            <h4>Download tema github</h4>
+<p><figure class="right">
+    <img src="../images/download-zip-github.gif"
+         alt="Download tema github" width="250px"/> <figcaption>
+            <p>Download por zip</p>
         </figcaption>
 </figure>
 
+Se você não é um usuário do Git ou não quer fazer isso agora, acessa o repositório do seu tema e faz o download da branch master.</p>
 
 <p>Feito isso faz a extração do arquivo zip e renomeia ele para o nome simples do tema,
-como por exemplo se era <code>gohugo-theme-ananke</code> renomeia só para <code>anake</code>. Copia esse arquivo para
-a pasta <code>{seusite}/themes/{suapastarenomeada}</code>.</p>
+como por exemplo se era <code>gohugo-theme-ananke</code> renomeia só para <code>anake</code>.</p>
 
-<p>voltamos ao arquivo de configuração que usamos lá no começo <code>config.toml</code>.</p>
+<p>Copia esse arquivo para a pasta do seu site dentro de <code>themes</code>.</p>
+
+<p>E então voltamos ao arquivo de configuração que usamos lá no começo <code>config.toml</code>.</p>
 
 <pre><code>baseURL = &quot;http://miltonjneto.com.br&quot;
 languageCode = &quot;en-us&quot;
@@ -139,6 +140,14 @@ title = &quot;Milton Jacomini&quot;
 
 <pre><code>hugo server -D
 </code></pre>
+
+<figure>
+    <img src="../images/hugo-server-run.gif"
+         alt="Download tema github"/> <figcaption>
+            <p>hugo server -D</p>
+        </figcaption>
+</figure>
+
 
 <p>Já deve ter visto ele rodando né!? =)</p>
 
