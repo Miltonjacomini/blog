@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Milton Jacomini</title>
-    <link>http://miltonjneto.com.br/</link>
-    <description>Recent content on Milton Jacomini</description>
+    <title>Templates on Milton Jacomini</title>
+    <link>http://miltonjneto.com.br/tags/templates/</link>
+    <description>Recent content in Templates on Milton Jacomini</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Feb 2019 17:14:00 -0300</lastBuildDate>
     
-	<atom:link href="http://miltonjneto.com.br/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://miltonjneto.com.br/tags/templates/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,19 +21,6 @@
 Bom, to a um tempo para começar a escrever umas coisinhas que vou fazendo e aprendendo e agora resolvi iniciar essa parada de vez! =)
 O Hugo é um framework escrito em &amp;lsquo;Go&amp;rsquo; mais uma das linguagens do Pai Google! Eu to começando a brincar com Go e achei interessante montar o site com um framework da linguagem.
 Na página deles você acha as instruções para download e instalação.</description>
-    </item>
-    
-    <item>
-      <title>Sobre mim</title>
-      <link>http://miltonjneto.com.br/about-me/</link>
-      <pubDate>Thu, 14 Feb 2019 16:35:07 -0200</pubDate>
-      
-      <guid>http://miltonjneto.com.br/about-me/</guid>
-      <description>FullStack Developer que ama o que faz =)
-Estou sempre buscando aprender coisas novas não só no lado técnico como também no lado das Soft Skills, lidar com pessoas e processos tem se tornado algo que me inspira muito para me tornar um profissional ainda melhor do que já sou. (Sim, se agente não se achar bom quem vai!? HAHA).
-Sem mais delongas..
-Hard Skills Sou monstro em:
- Java SE 8 &amp;gt; Spring Framework (MVC, Data, Security &amp;hellip;) &amp;lt;3 JPA/Hibernate HTML/CSS  Tenho experiência entre pouco tempo e razoável:</description>
     </item>
     
   </channel>

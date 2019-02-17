@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta itemprop="name" content="Criando site com hugo (GoLang)">
+<meta itemprop="description" content="Introdução Fala galera, suave!?
+Bom, to a um tempo para começar a escrever umas coisinhas que vou fazendo e aprendendo e agora resolvi iniciar essa parada de vez! =)
+O Hugo é um framework escrito em &lsquo;Go&rsquo; mais uma das linguagens do Pai Google! Eu to começando a brincar com Go e achei interessante montar o site com um framework da linguagem.
+Na página deles você acha as instruções para download e instalação.">
+
+
+<meta itemprop="datePublished" content="2019-02-17T17:14:00-03:00" />
+<meta itemprop="dateModified" content="2019-02-17T17:14:00-03:00" />
+<meta itemprop="wordCount" content="556">
+
+
+
+<meta itemprop="keywords" content="go,golang,templates,themes,development," />
+<meta property="og:title" content="Criando site com hugo (GoLang)" />
+<meta property="og:description" content="Introdução Fala galera, suave!?
+Bom, to a um tempo para começar a escrever umas coisinhas que vou fazendo e aprendendo e agora resolvi iniciar essa parada de vez! =)
+O Hugo é um framework escrito em &lsquo;Go&rsquo; mais uma das linguagens do Pai Google! Eu to começando a brincar com Go e achei interessante montar o site com um framework da linguagem.
+Na página deles você acha as instruções para download e instalação." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://miltonjneto.com.br/posts/criando-site-com-hugo/" />
+<meta property="article:published_time" content="2019-02-17T17:14:00-03:00"/>
+<meta property="article:modified_time" content="2019-02-17T17:14:00-03:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Criando site com hugo (GoLang)"/>
+<meta name="twitter:description" content="Introdução Fala galera, suave!?
+Bom, to a um tempo para começar a escrever umas coisinhas que vou fazendo e aprendendo e agora resolvi iniciar essa parada de vez! =)
+O Hugo é um framework escrito em &lsquo;Go&rsquo; mais uma das linguagens do Pai Google! Eu to começando a brincar com Go e achei interessante montar o site com um framework da linguagem.
+Na página deles você acha as instruções para download e instalação."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Criando site com hugo (GoLang)</title>
+	<link rel="stylesheet" href="http://miltonjneto.com.br/css/style.min.e17a25802a5bbec7b5c368fdf0e55ed331a31cadbc95c1c0e7be9e9cf889b8fb.css" integrity="sha256-4XolgCpbvse1w2j98OVe0zGjHK28lcHA576enPiJuPs=">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="http://miltonjneto.com.br">Milton Jacomini</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					<a href="http://miltonjneto.com.br/posts/">Posts</a>
+					<a href="http://miltonjneto.com.br/about-me">Sobre mim</a>
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://www.linkedin.com/in/miltonjacominineto" target="_blank" rel="noopener" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://github.com/miltonjacomini" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://twitter.com/miltonjacomini" target="_blank" rel="noopener" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://www.instagram.com/tino.milton/" target="_blank" rel="noopener" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="http://miltonjneto.com.br/posts/">Posts</a></li>
+			<li><a href="http://miltonjneto.com.br/about-me">Sobre mim</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Feb 17, 2019</span></div>
+				<h1>Criando site com hugo (GoLang)</h1>
+			</header>
+			<div class="content">
+				
+
+<h2 id="introdução">Introdução<a href="#introdução" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>Fala galera, suave!?</p>
+
+<p>Bom, to a um tempo para começar a escrever umas coisinhas que vou fazendo e aprendendo
+e agora resolvi iniciar essa parada de vez! =)</p>
+
+<p>O <a href="https://gohugo.io/"><code>Hugo</code></a> é um framework escrito em &lsquo;Go&rsquo; mais uma das linguagens do Pai Google! Eu to começando
+a brincar com Go e achei interessante montar o site com um framework da linguagem.</p>
+
+<p>Na página deles você acha as instruções para <a href="https://golang.org/dl/">download</a> e <a href="https://golang.org/doc/install">instalação</a>.</p>
+
+<p>Feito isso, bora pro <code>Hugo</code></p>
+
+<h2 id="hugo">Hugo<a href="#hugo" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<h5 id="instalação"><em>Instalação</em><a href="#instalação" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h5>
+
+<p>Muito simples, se você já for usuário dos shells da vida já vai matar rapidão.
+Senão for, basicamente existem gerenciadores de pacotes para instalação de softwares via <a href="https://swcarpentry.github.io/shell-novice/reference/">shell</a>.</p>
+
+<p>Se você for usuário de MacOS vai usar o <code>brew</code> se você for usuário de Windows
+vai usar o <code>choco</code> ou <code>scoop</code>. Mais sobre na <a href="https://gohugo.io/getting-started/installing">página</a> deles.</p>
+
+<h5 id="primeiros-passos"><em>Primeiros passos</em><a href="#primeiros-passos" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h5>
+
+<p>Para se certificar que o <code>Hugo</code> está instalado digita ae:</p>
+
+<pre><code>hugo version
+</code></pre>
+
+<p>Depois disso acessa lá seu diretório que quer criar o site e manda:</p>
+
+<pre><code>hugo new site {nomedoseusite}
+</code></pre>
+
+<p>Se você digitar um <code>ls</code> vai ver que já existe a pasta que contém todo o conteúdo
+do seu site =), bora acessar ela <code>cd {nomedapasta}</code></p>
+
+<p>já vamos direto para o que interessa, que é o arquivo de <code>config</code>.</p>
+
+<p>Meu editor preferido hoje é o VSCode então usarei:</p>
+
+<pre><code>code config.toml
+</code></pre>
+
+<p>Mas você pode alterar code para seu editor de texto preferido trocando a primeira instrução do código acima ou simplesmente abrir o arquivo direto pelo seu editor.</p>
+
+<p>vamos por partes..rs</p>
+
+<p>Esse deve ser seu arquivo quando aberto:</p>
+
+<pre><code>baseURL = &quot;http://example.org/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;My New Hugo Site&quot;
+</code></pre>
+
+<p>Isso é o que deve ter aparecido pra você.</p>
+
+<p>Imagino que sem muito segredo, certo!? URL base da sua aplicação, a linguagem utilizada
+nos códigos e o título do seu site.</p>
+
+<p>O meu ficou assim:</p>
+
+<pre><code>baseURL = &quot;http://miltonjneto.com.br&quot; &lt;- Meu domínio
+languageCode = &quot;en-us&quot; &lt;- Não alterei a linguagem mantive o englishh
+title = &quot;Milton Jacomini&quot;
+</code></pre>
+
+<p>Por enquanto sem segredo né!? Bem easy, na real você vai ver que tudo é bem easy..rsrs</p>
+
+<p>Agora a parte mais divertida e demorada dependendo da pessoa, rsrsrsrs! Escolher o Tema,
+depois de escolhido vamos adiciona-lo ao site fazendo o seguinte.</p>
+
+<pre><code># Entra na pasta dele
+cd {seusite}
+
+# Para iniciar um repositório git na raiz do seu projeto
+git init
+git submodule add https://github.com/budparr/{pathdotema}.git {pathdotema}
+
+# ex: tema escolhido foi o themes/ananke
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+
+</code></pre>
+
+<p>Se você não é um usuário do Git ou não quer fazer isso agora, acessa o repositório do seu tema e faz o download da branch master.</p>
+
+<figure>
+    <img src="images/download-zip-github.gif"/> <figcaption>
+            <h4>Download tema github</h4>
+        </figcaption>
+</figure>
+
+
+<p>Feito isso faz a extração do arquivo zip e renomeia ele para o nome simples do tema,
+como por exemplo se era <code>gohugo-theme-ananke</code> renomeia só para <code>anake</code>. Copia esse arquivo para
+a pasta <code>{seusite}/themes/{suapastarenomeada}</code>.</p>
+
+<p>voltamos ao arquivo de configuração que usamos lá no começo <code>config.toml</code>.</p>
+
+<pre><code>baseURL = &quot;http://miltonjneto.com.br&quot;
+languageCode = &quot;en-us&quot;
+theme = &quot;ananke&quot; #Adicione essa linha com o nome que da pasta que vc jogou na `themes`
+title = &quot;Milton Jacomini&quot;
+</code></pre>
+
+<p>Feito isso, cria um post novo só pra ver a magia da coisa.</p>
+
+<pre><code>hugo new posts/meu-primeiro-post.md 
+</code></pre>
+
+<p>E agora vamos iniciar o servidor do <code>Hugo</code> e ver o site online (Localmente, por enquanto..rs)</p>
+
+<p>Na raiz do projeto:</p>
+
+<pre><code>hugo server -D
+</code></pre>
+
+<p>Já deve ter visto ele rodando né!? =)</p>
+
+<p>E ai curtiu?</p>
+
+<p>Estou aberto a feeback`s, abss.</p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="http://miltonjneto.com.br/tags/go">go</a></span><span class="tag"><a href="http://miltonjneto.com.br/tags/golang">golang</a></span><span class="tag"><a href="http://miltonjneto.com.br/tags/templates">templates</a></span><span class="tag"><a href="http://miltonjneto.com.br/tags/themes">themes</a></span><span class="tag"><a href="http://miltonjneto.com.br/tags/development">development</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>556 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-02-17 17:14 -0300</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2019 <a href="http://miltonjneto.com.br">Milton Jacomini</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="http://miltonjneto.com.br/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+	<script src="http://miltonjneto.com.br/js/main.min.8f39f24808e9d0a9b02da58c2d2838da859dc0b7bdfadbdb1883aae8b6adacfe.js" integrity="sha256-jznySAjp0KmwLaWMLSg42oWdwLe9+tvbGIOq6LatrP4="></script>
+
+</body>
+
+</html>

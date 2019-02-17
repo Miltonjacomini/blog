@@ -1,5 +1,47 @@
 baseURL = "http://miltonjneto.com.br"
-languageCode = "pt-br"
-title = "Milton Jacomini"
+languageCode = "en-us"
+defaultContentLanguage = "en"
 theme = "hermit"
 publishDir = "docs"
+
+title = "Milton Jacomini"
+
+[author]
+  name = "Milton Jacomini"
+
+[menu]
+[[menu.main]]
+  name = "Sobre mim"
+  url = "about-me"
+  weight = 20
+
+[[menu.main]]
+    name = "Posts"
+    url = "posts/"
+    weight = 10
+
+# Social Icons
+[[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/miltonjacominineto"
+
+[[params.social]]
+    name = "github"
+    url = "https://github.com/miltonjacomini"
+
+[[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/miltonjacomini"
+
+[[params.social]]
+    name = "instagram"
+    url = "https://www.instagram.com/tino.milton/"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
