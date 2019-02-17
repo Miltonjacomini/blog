@@ -1,4 +1,4 @@
-baseURL = "http://miltonjneto.com.br"
+baseURL = "https://miltonjneto.com.br"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 theme = "hermit"
