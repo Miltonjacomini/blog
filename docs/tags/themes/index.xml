@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Themes on Milton Jacomini</title>
-    <link>http://miltonjneto.com.br/tags/themes/</link>
+    <link>https://miltonjneto.com.br/tags/themes/</link>
     <description>Recent content in Themes on Milton Jacomini</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Feb 2019 17:14:00 -0300</lastBuildDate>
     
-	<atom:link href="http://miltonjneto.com.br/tags/themes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://miltonjneto.com.br/tags/themes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Criando site com hugo (GoLang)</title>
-      <link>http://miltonjneto.com.br/posts/criando-site-com-hugo/</link>
+      <link>https://miltonjneto.com.br/posts/criando-site-com-hugo/</link>
       <pubDate>Sun, 17 Feb 2019 17:14:00 -0300</pubDate>
       
-      <guid>http://miltonjneto.com.br/posts/criando-site-com-hugo/</guid>
+      <guid>https://miltonjneto.com.br/posts/criando-site-com-hugo/</guid>
       <description>Introdução Fala galera, suave!?
 Bom, to a um tempo para começar a escrever umas coisinhas que vou fazendo e aprendendo e agora resolvi iniciar essa parada de vez! =)
 O Hugo é um framework escrito em &amp;lsquo;Go&amp;rsquo; mais uma das linguagens do Pai Google! Eu to começando a brincar com Go e achei interessante montar o site com um framework da linguagem.
