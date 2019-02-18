@@ -4,6 +4,8 @@ defaultContentLanguage = "en"
 theme = "hermit"
 publishDir = "docs"
 
+disqusShortname = "disqus_thread"
+
 title = "Milton Jacomini"
 
 [author]
