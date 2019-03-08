@@ -157,5 +157,196 @@ title = &quot;Milton Jacomini&quot;
 ]]></content>
 		</item>
 		
+		<item>
+			<title>Hugo on Github Pages (gh-pages)</title>
+			<link>https://miltonjneto.com.br/posts/hugo-on-github/</link>
+			<pubDate>Sun, 17 Feb 2019 17:14:00 -0300</pubDate>
+			
+			<guid>https://miltonjneto.com.br/posts/hugo-on-github/</guid>
+			<description>Salve salve meu povo, novo post&amp;hellip;
+Como tinha comentado, esse é sobre colocar seu blog feito em Hugo no Github Pages
+Introdução Vou considerar que você é um usuário do Github e pular a explicação sobre os comandos relacionados ao Git.
+Ok? .. Mas claro, se tiver dúvidas sobre o que eu não falar pode mandar nos comentários que eu respondo. =)
+Sobre o Github Pages, é uma ferramenta que o Github disponibiliza para que você possa publicar paginas estáticas.</description>
+			<content type="html"><![CDATA[
+
+<p>Salve salve meu povo, novo post&hellip;</p>
+
+<p>Como tinha comentado, esse é sobre colocar seu blog feito em Hugo no Github Pages</p>
+
+<h2 id="introdução">Introdução</h2>
+
+<p>Vou considerar que você é um usuário do Github e pular a explicação sobre os comandos relacionados ao Git.</p>
+
+<p>Ok? .. Mas claro, se tiver dúvidas sobre o que eu não falar pode mandar nos comentários que eu respondo. =)</p>
+
+<p>Sobre o <a href="https://pages.github.com/"><code>Github Pages</code></a>, é uma ferramenta que o Github disponibiliza para que você
+possa publicar paginas estáticas. Muito usado para montar um site simples de apresentação, na maioria das vezes
+sobre <code>Frameworks</code>,<code>Libs</code>,<code>Tutoriais</code> e etc.. Coisas desse tipo
+(E que muitas vezes já fica junto com o código do projeto).</p>
+
+<p>Com essa funcionalidade muita gente começou a montar blogs e páginas de apresentação e publicar nesse hospedeiro
+free de sites estáticos.</p>
+
+<p>sem mais delongas,</p>
+
+<p>Mãos a obra&hellip;</p>
+
+<h2 id="setup-do-seu-projeto">Setup do seu projeto</h2>
+
+<p>Para começar vamos considerar que você criou seu repositório no github.</p>
+
+<p>O meu é <code>https://github.com/Miltonjacomini/demo-blog</code>, você pode criar ele pela plataforma do github direto ou por linha de comando, criado o seu repositório você precisa indicar no seu projeto que está usando esse diretório.</p>
+
+<p><details>
+  <summary>Processo detalhado para criar repositório e linkar no repositório remoto.</summary></p>
+
+<p>Para iniciar um repositório na raiz do seu projeto:</p>
+
+<pre><code>    git init
+</code></pre>
+
+<p>Adicione tudo que tem no repositório e faça o primeiro commit para que a branch <code>master</code> seja criada
+  no repositório seu local.</p>
+
+<pre><code>    git add .
+</code></pre>
+
+<p><figure>
+    <img src="../images/git-add-status-scroll.gif"
+         alt="Scroll do resultado do git add"/> 
+</figure>
+
+  Algo parecido vai acontecer ai..</p>
+
+<pre><code>    git commit -m &quot;Adiciona arquivos no projeto&quot;  
+</code></pre>
+
+<p>E o depois do commit mesma coisa:
+  <figure>
+    <img src="../images/git-commit-scroll.gif"
+         alt="Scroll do resultado do git commit"/> 
+</figure>
+</p>
+
+<p>Para linkar esse repositório que até o momento é <code>local</code> para um repositório <code>remoto</code>,
+  <code>git remote add origin linkdoseurepositorio</code> no meu caso ficou assim:</p>
+
+<pre><code>    git remote add origin git@github.com:Miltonjacomini/demo-blog.git 
+</code></pre>
+
+<p>E fazer o push para enviar para o repositório remoto que vc acabou de linkar.</p>
+
+<pre><code>    git push -u origin master
+</code></pre>
+
+<p></details>
+<br/></p>
+
+<h2 id="configurando-o-github-pages">Configurando o GitHub Pages</h2>
+
+<p>Considerando então que você já tem seu projeto no github vamos acessar o <code>Settings</code> do repositório e habilitar o github pages.</p>
+
+<figure>
+    <img src="../images/github-pages-none.png"
+         alt="Git hub pages"/> 
+</figure>
+
+
+<p>Podemos ver que ele tem uma opção onde você pode selecionar qual será o <code>Source</code> do seu site.</p>
+
+<p>Isso nada mais é do que o diretório que o GitHub Pages vai considerar como <code>raiz</code> do seu projeto. Que é onde vai estar seu código estático.</p>
+
+<p>No meu caso eu optei por deixar o projeto todo do blog no github o que me facilitaria a manutenção dele fora de casa, mas você pode optar por deixar na raiz do seu projeto só o conteúdo já gerado pelo Hugo.</p>
+
+<p>Que por default fica em <code>public</code>.</p>
+
+<p>Se você não quiser expor seu projeto, inicia seu git na pasta public e escolhe o <code>Source</code> como master.</p>
+
+<blockquote>
+<p>Se quiser ver o Hugo gerando o conteúdo faz o teste.
+Entra na pasta public na raiz do seu projeto e apaga tudo, depois gera denovo com
+<code>hugo -t nomedoseutema</code> na raiz do projeto.</p>
+</blockquote>
+
+<p>Por deixar meu projeto todo no github eu não posso deixar que a minha <code>master</code> a raiz do meu projeto seja o <code>Source</code> pois lá vai ter um monte de código que o Hugo entende e utiliza.</p>
+
+<p>Preciso então que o GitHub Pages saiba que meu <code>Source</code> é outro, no caso <code>/docs</code> diretório default no GitHub Pages.</p>
+
+<figure>
+    <img src="../images/github-pages.png"
+         alt="Git hub pages"/> 
+</figure>
+
+
+<h2 id="alterando-configurações-do-seu-site">Alterando configurações do seu site</h2>
+
+<p>Seguindo do jeito que eu fiz, adicionei no meu <code>config.toml</code> aquele arquivo que alterei no <a href="https://miltonjneto.com.br/posts/criando-site-com-hugo/">primeiro post</a>, o arquivo de configurações do seu site em <code>Hugo</code> que fica na raiz do projeto.</p>
+
+<p>Lá eu adicionei duas coisas,
+uma para alterar o local aonde o Hugo vai jogar meu conteúdo estático compiladinho bonitinho:</p>
+
+<pre><code>publishDir = &quot;docs&quot;
+</code></pre>
+
+<p>e a outra foi para que o meu site estático seja gerado com o path (diretório) dos arquivos <code>html, css e js</code> apontando para o lugar certo:</p>
+
+<pre><code>baseUrl = https://miltonjacomini.github.io/demo-blog/ 
+</code></pre>
+
+<p>Essa é a url que é exibida nas configurações do Github Pages.
+<figure>
+    <img src="../images/github-pages-link.png"
+         alt="Git hub pages"/> 
+</figure>
+</p>
+
+<p>Bom, feito isso.
+Seu arquivo deve estar assim:</p>
+
+<pre><code>baseURL = &quot;https://miltonjacomini.github.io/demo-blog/&quot;
+languageCode = &quot;en-us&quot;
+
+Title = &quot;Theme Demo&quot;
+theme=&quot;ananke&quot;
+
+publishDir = &quot;docs&quot;
+</code></pre>
+
+<p>Cheeeeck, lindesas.</p>
+
+<h2 id="final-e-review">Final e review</h2>
+
+<p>Agora é só gerar novamente os arquivos do Hugo, com o comandinho maroto:</p>
+
+<pre><code>  hugo -t &quot;nomedoseutema&quot;
+</code></pre>
+
+<p>Adicionar tudo no git e subir.</p>
+
+<p>Aquele combo exxperto <code>git add</code>,<code>git commit -m 'msg de commit'</code> e <code>git push</code>.</p>
+
+<p>Logo seu site vai estar aparecendo bonitão no link que o GitHub Pages te disponibilizou
+e você adicionou no arquivo de configurações.</p>
+
+<p>no meu caso: <a href="https://miltonjacomini.github.io/demo-blog/">https://miltonjacomini.github.io/demo-blog/</a></p>
+
+<figure>
+    <img src="../images/finish-post-2.gif"
+         alt="Review do post em um gif"/> 
+</figure>
+
+
+<p>E assim finalizamos..</p>
+
+<p>Como de praxe vou sempre deixar o próximo assunto que vou falar, e vai ser:
+Um serviço REST (SpringBoot + React) para upload de arquivos no S3 da Amazon.</p>
+
+<p>Feedbacks são bem vindos =)</p>
+
+<p>Absss.</p>
+]]></content>
+		</item>
+		
 	</channel>
 </rss>

@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://miltonjneto.com.br/posts/hugo-on-github/</loc>
+    <lastmod>2019-02-17T17:14:00-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://miltonjneto.com.br/about-me/</loc>
     <lastmod>2019-02-14T16:35:07-03:00</lastmod>
   </url>
@@ -24,6 +29,24 @@
   </url>
   
   <url>
+    <loc>https://miltonjneto.com.br/tags/gh-pages/</loc>
+    <lastmod>2019-02-17T17:14:00-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miltonjneto.com.br/tags/github/</loc>
+    <lastmod>2019-02-17T17:14:00-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miltonjneto.com.br/tags/github-pages/</loc>
+    <lastmod>2019-02-17T17:14:00-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://miltonjneto.com.br/tags/go/</loc>
     <lastmod>2019-02-17T17:14:00-03:00</lastmod>
     <priority>0</priority>
@@ -31,6 +54,12 @@
   
   <url>
     <loc>https://miltonjneto.com.br/tags/golang/</loc>
+    <lastmod>2019-02-17T17:14:00-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miltonjneto.com.br/tags/hugo_on_github/</loc>
     <lastmod>2019-02-17T17:14:00-03:00</lastmod>
     <priority>0</priority>
   </url>

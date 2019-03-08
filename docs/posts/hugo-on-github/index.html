@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta itemprop="name" content="Hugo on Github Pages (gh-pages)">
+<meta itemprop="description" content="Salve salve meu povo, novo post&hellip;
+Como tinha comentado, esse é sobre colocar seu blog feito em Hugo no Github Pages
+Introdução Vou considerar que você é um usuário do Github e pular a explicação sobre os comandos relacionados ao Git.
+Ok? .. Mas claro, se tiver dúvidas sobre o que eu não falar pode mandar nos comentários que eu respondo. =)
+Sobre o Github Pages, é uma ferramenta que o Github disponibiliza para que você possa publicar paginas estáticas.">
+
+
+<meta itemprop="datePublished" content="2019-02-17T17:14:00-03:00" />
+<meta itemprop="dateModified" content="2019-02-17T17:14:00-03:00" />
+<meta itemprop="wordCount" content="757">
+
+
+
+<meta itemprop="keywords" content="github,hugo_on_github,github-pages,gh-pages," />
+<meta property="og:title" content="Hugo on Github Pages (gh-pages)" />
+<meta property="og:description" content="Salve salve meu povo, novo post&hellip;
+Como tinha comentado, esse é sobre colocar seu blog feito em Hugo no Github Pages
+Introdução Vou considerar que você é um usuário do Github e pular a explicação sobre os comandos relacionados ao Git.
+Ok? .. Mas claro, se tiver dúvidas sobre o que eu não falar pode mandar nos comentários que eu respondo. =)
+Sobre o Github Pages, é uma ferramenta que o Github disponibiliza para que você possa publicar paginas estáticas." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://miltonjneto.com.br/posts/hugo-on-github/" />
+<meta property="article:published_time" content="2019-02-17T17:14:00-03:00"/>
+<meta property="article:modified_time" content="2019-02-17T17:14:00-03:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo on Github Pages (gh-pages)"/>
+<meta name="twitter:description" content="Salve salve meu povo, novo post&hellip;
+Como tinha comentado, esse é sobre colocar seu blog feito em Hugo no Github Pages
+Introdução Vou considerar que você é um usuário do Github e pular a explicação sobre os comandos relacionados ao Git.
+Ok? .. Mas claro, se tiver dúvidas sobre o que eu não falar pode mandar nos comentários que eu respondo. =)
+Sobre o Github Pages, é uma ferramenta que o Github disponibiliza para que você possa publicar paginas estáticas."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Hugo on Github Pages (gh-pages)</title>
+	<link rel="stylesheet" href="https://miltonjneto.com.br/css/style.min.e17a25802a5bbec7b5c368fdf0e55ed331a31cadbc95c1c0e7be9e9cf889b8fb.css" integrity="sha256-4XolgCpbvse1w2j98OVe0zGjHK28lcHA576enPiJuPs=">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://miltonjneto.com.br">Milton Jacomini</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					<a href="https://miltonjneto.com.br/posts/">Posts</a>
+					<a href="https://miltonjneto.com.br/about-me">Sobre mim</a>
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://www.linkedin.com/in/miltonjacominineto" target="_blank" rel="noopener" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://github.com/miltonjacomini" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://twitter.com/miltonjacomini" target="_blank" rel="noopener" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://www.instagram.com/tino.milton/" target="_blank" rel="noopener" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://miltonjneto.com.br/posts/">Posts</a></li>
+			<li><a href="https://miltonjneto.com.br/about-me">Sobre mim</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Feb 17, 2019</span></div>
+				<h1>Hugo on Github Pages (gh-pages)</h1>
+			</header>
+			<div class="content">
+				
+
+<p>Salve salve meu povo, novo post&hellip;</p>
+
+<p>Como tinha comentado, esse é sobre colocar seu blog feito em Hugo no Github Pages</p>
+
+<h2 id="introdução">Introdução<a href="#introdução" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>Vou considerar que você é um usuário do Github e pular a explicação sobre os comandos relacionados ao Git.</p>
+
+<p>Ok? .. Mas claro, se tiver dúvidas sobre o que eu não falar pode mandar nos comentários que eu respondo. =)</p>
+
+<p>Sobre o <a href="https://pages.github.com/"><code>Github Pages</code></a>, é uma ferramenta que o Github disponibiliza para que você
+possa publicar paginas estáticas. Muito usado para montar um site simples de apresentação, na maioria das vezes
+sobre <code>Frameworks</code>,<code>Libs</code>,<code>Tutoriais</code> e etc.. Coisas desse tipo
+(E que muitas vezes já fica junto com o código do projeto).</p>
+
+<p>Com essa funcionalidade muita gente começou a montar blogs e páginas de apresentação e publicar nesse hospedeiro
+free de sites estáticos.</p>
+
+<p>sem mais delongas,</p>
+
+<p>Mãos a obra&hellip;</p>
+
+<h2 id="setup-do-seu-projeto">Setup do seu projeto<a href="#setup-do-seu-projeto" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>Para começar vamos considerar que você criou seu repositório no github.</p>
+
+<p>O meu é <code>https://github.com/Miltonjacomini/demo-blog</code>, você pode criar ele pela plataforma do github direto ou por linha de comando, criado o seu repositório você precisa indicar no seu projeto que está usando esse diretório.</p>
+
+<p><details>
+  <summary>Processo detalhado para criar repositório e linkar no repositório remoto.</summary></p>
+
+<p>Para iniciar um repositório na raiz do seu projeto:</p>
+
+<pre><code>    git init
+</code></pre>
+
+<p>Adicione tudo que tem no repositório e faça o primeiro commit para que a branch <code>master</code> seja criada
+  no repositório seu local.</p>
+
+<pre><code>    git add .
+</code></pre>
+
+<p><figure>
+    <img src="../images/git-add-status-scroll.gif"
+         alt="Scroll do resultado do git add"/> 
+</figure>
+
+  Algo parecido vai acontecer ai..</p>
+
+<pre><code>    git commit -m &quot;Adiciona arquivos no projeto&quot;  
+</code></pre>
+
+<p>E o depois do commit mesma coisa:
+  <figure>
+    <img src="../images/git-commit-scroll.gif"
+         alt="Scroll do resultado do git commit"/> 
+</figure>
+</p>
+
+<p>Para linkar esse repositório que até o momento é <code>local</code> para um repositório <code>remoto</code>,
+  <code>git remote add origin linkdoseurepositorio</code> no meu caso ficou assim:</p>
+
+<pre><code>    git remote add origin git@github.com:Miltonjacomini/demo-blog.git 
+</code></pre>
+
+<p>E fazer o push para enviar para o repositório remoto que vc acabou de linkar.</p>
+
+<pre><code>    git push -u origin master
+</code></pre>
+
+<p></details>
+<br/></p>
+
+<h2 id="configurando-o-github-pages">Configurando o GitHub Pages<a href="#configurando-o-github-pages" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>Considerando então que você já tem seu projeto no github vamos acessar o <code>Settings</code> do repositório e habilitar o github pages.</p>
+
+<figure>
+    <img src="../images/github-pages-none.png"
+         alt="Git hub pages"/> 
+</figure>
+
+
+<p>Podemos ver que ele tem uma opção onde você pode selecionar qual será o <code>Source</code> do seu site.</p>
+
+<p>Isso nada mais é do que o diretório que o GitHub Pages vai considerar como <code>raiz</code> do seu projeto. Que é onde vai estar seu código estático.</p>
+
+<p>No meu caso eu optei por deixar o projeto todo do blog no github o que me facilitaria a manutenção dele fora de casa, mas você pode optar por deixar na raiz do seu projeto só o conteúdo já gerado pelo Hugo.</p>
+
+<p>Que por default fica em <code>public</code>.</p>
+
+<p>Se você não quiser expor seu projeto, inicia seu git na pasta public e escolhe o <code>Source</code> como master.</p>
+
+<blockquote>
+<p>Se quiser ver o Hugo gerando o conteúdo faz o teste.
+Entra na pasta public na raiz do seu projeto e apaga tudo, depois gera denovo com
+<code>hugo -t nomedoseutema</code> na raiz do projeto.</p>
+</blockquote>
+
+<p>Por deixar meu projeto todo no github eu não posso deixar que a minha <code>master</code> a raiz do meu projeto seja o <code>Source</code> pois lá vai ter um monte de código que o Hugo entende e utiliza.</p>
+
+<p>Preciso então que o GitHub Pages saiba que meu <code>Source</code> é outro, no caso <code>/docs</code> diretório default no GitHub Pages.</p>
+
+<figure>
+    <img src="../images/github-pages.png"
+         alt="Git hub pages"/> 
+</figure>
+
+
+<h2 id="alterando-configurações-do-seu-site">Alterando configurações do seu site<a href="#alterando-configurações-do-seu-site" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>Seguindo do jeito que eu fiz, adicionei no meu <code>config.toml</code> aquele arquivo que alterei no <a href="https://miltonjneto.com.br/posts/criando-site-com-hugo/">primeiro post</a>, o arquivo de configurações do seu site em <code>Hugo</code> que fica na raiz do projeto.</p>
+
+<p>Lá eu adicionei duas coisas,
+uma para alterar o local aonde o Hugo vai jogar meu conteúdo estático compiladinho bonitinho:</p>
+
+<pre><code>publishDir = &quot;docs&quot;
+</code></pre>
+
+<p>e a outra foi para que o meu site estático seja gerado com o path (diretório) dos arquivos <code>html, css e js</code> apontando para o lugar certo:</p>
+
+<pre><code>baseUrl = https://miltonjacomini.github.io/demo-blog/ 
+</code></pre>
+
+<p>Essa é a url que é exibida nas configurações do Github Pages.
+<figure>
+    <img src="../images/github-pages-link.png"
+         alt="Git hub pages"/> 
+</figure>
+</p>
+
+<p>Bom, feito isso.
+Seu arquivo deve estar assim:</p>
+
+<pre><code>baseURL = &quot;https://miltonjacomini.github.io/demo-blog/&quot;
+languageCode = &quot;en-us&quot;
+
+Title = &quot;Theme Demo&quot;
+theme=&quot;ananke&quot;
+
+publishDir = &quot;docs&quot;
+</code></pre>
+
+<p>Cheeeeck, lindesas.</p>
+
+<h2 id="final-e-review">Final e review<a href="#final-e-review" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>Agora é só gerar novamente os arquivos do Hugo, com o comandinho maroto:</p>
+
+<pre><code>  hugo -t &quot;nomedoseutema&quot;
+</code></pre>
+
+<p>Adicionar tudo no git e subir.</p>
+
+<p>Aquele combo exxperto <code>git add</code>,<code>git commit -m 'msg de commit'</code> e <code>git push</code>.</p>
+
+<p>Logo seu site vai estar aparecendo bonitão no link que o GitHub Pages te disponibilizou
+e você adicionou no arquivo de configurações.</p>
+
+<p>no meu caso: <a href="https://miltonjacomini.github.io/demo-blog/">https://miltonjacomini.github.io/demo-blog/</a></p>
+
+<figure>
+    <img src="../images/finish-post-2.gif"
+         alt="Review do post em um gif"/> 
+</figure>
+
+
+<p>E assim finalizamos..</p>
+
+<p>Como de praxe vou sempre deixar o próximo assunto que vou falar, e vai ser:
+Um serviço REST (SpringBoot + React) para upload de arquivos no S3 da Amazon.</p>
+
+<p>Feedbacks são bem vindos =)</p>
+
+<p>Absss.</p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://miltonjneto.com.br/tags/github">github</a></span><span class="tag"><a href="https://miltonjneto.com.br/tags/hugo_on_github">hugo_on_github</a></span><span class="tag"><a href="https://miltonjneto.com.br/tags/github-pages">github-pages</a></span><span class="tag"><a href="https://miltonjneto.com.br/tags/gh-pages">gh-pages</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>757 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-02-17 17:14 -0300</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://miltonjneto.com.br/posts/criando-site-com-hugo/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>Criando site com hugo (GoLang)</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+			<div id="disqus_thread"></div>
+			<script type="application/javascript">
+					var disqus_config = function () {
+					
+					
+					
+					};
+					(function() {
+							if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+									document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+									return;
+							}
+							var d = document, s = d.createElement('script'); s.async = true;
+							s.src = '//' + "disqus_thread" + '.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+					})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2019 <a href="https://miltonjneto.com.br">Milton Jacomini</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://miltonjneto.com.br/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+	<script src="https://miltonjneto.com.br/js/main.min.8f39f24808e9d0a9b02da58c2d2838da859dc0b7bdfadbdb1883aae8b6adacfe.js" integrity="sha256-jznySAjp0KmwLaWMLSg42oWdwLe9+tvbGIOq6LatrP4="></script>
+
+</body>
+
+</html>

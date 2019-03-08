@@ -24,6 +24,19 @@ Na página deles você acha as instruções para download e instalação.</descr
     </item>
     
     <item>
+      <title>Hugo on Github Pages (gh-pages)</title>
+      <link>https://miltonjneto.com.br/posts/hugo-on-github/</link>
+      <pubDate>Sun, 17 Feb 2019 17:14:00 -0300</pubDate>
+      
+      <guid>https://miltonjneto.com.br/posts/hugo-on-github/</guid>
+      <description>Salve salve meu povo, novo post&amp;hellip;
+Como tinha comentado, esse é sobre colocar seu blog feito em Hugo no Github Pages
+Introdução Vou considerar que você é um usuário do Github e pular a explicação sobre os comandos relacionados ao Git.
+Ok? .. Mas claro, se tiver dúvidas sobre o que eu não falar pode mandar nos comentários que eu respondo. =)
+Sobre o Github Pages, é uma ferramenta que o Github disponibiliza para que você possa publicar paginas estáticas.</description>
+    </item>
+    
+    <item>
       <title>Sobre mim</title>
       <link>https://miltonjneto.com.br/about-me/</link>
       <pubDate>Thu, 14 Feb 2019 16:35:07 -0300</pubDate>
